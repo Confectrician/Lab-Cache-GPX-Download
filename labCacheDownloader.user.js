@@ -34,7 +34,7 @@ $(function(){
         "margin-right" : "0px",
         "padding-right": "9px",
         "padding-left" : "9px",
-        "right"        : "206px"
+        "right"        : "184px"
     });
 
     /*
