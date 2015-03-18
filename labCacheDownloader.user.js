@@ -6,7 +6,7 @@
 // @include     https://labs.geocaching.com/Adventures/Details/*
 // @require     https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js
 // @updateURL   https://greasyfork.org/scripts/8624-lab-gpx-download/code/Lab%20GPX%20Download.user.js
-// @version     1.1
+// @version     1.1.1
 // @grant       none
 // ==/UserScript==
 
