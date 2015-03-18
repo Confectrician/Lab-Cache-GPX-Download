@@ -6,7 +6,7 @@
 // @include     https://labs.geocaching.com/Adventures/Details/*
 // @require     https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js
 // @updateURL   https://greasyfork.org/scripts/8624-lab-gpx-download/code/Lab%20GPX%20Download.user.js
-// @version     1.1.1
+// @version     1.1.2
 // @grant       none
 // ==/UserScript==
 
@@ -33,18 +33,17 @@ $(function(){
 
     /*
      * Move existing Leaderboard Button to the left
-     */
-    $('#leaderboard').css({
-        "margin-right" : "0px",
-        "padding-right": "9px",
-        "padding-left" : "9px",
-        "right"        : "184px"
-    });
-
-    /*
      * Create new Button with Download Link
      */
-    $('#leaderboard').parent().append(
-        '<a id="dl_link" class="link-leaderboard" href="' + downloadPath + '" style="padding-left: 9px;">Download‌ as‌ GPX‌ File</a>'
+    $('#leaderboard')
+        .css({
+            "margin-right" : "0px",
+            "padding-right": "9px",
+            "padding-left" : "9px",
+            "right"        : "184px"
+        })
+        .parent()
+        .append(
+            '<a id="dl_link" class="link-leaderboard" href="' + downloadPath + '" style="padding-left: 9px;">Download‌ as‌ GPX‌ File</a>'
     );
 });
