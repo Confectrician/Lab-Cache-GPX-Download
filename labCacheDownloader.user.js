@@ -15,7 +15,11 @@ $(function(){
      * removing -> background-image: -moz-linear-gradient(left center , rgba(157, 178, 81, 0) 0%, #9db251 100%);
      * This gets a clearer view, if more than one Navigation Button is Displayed
      */
-    document.styleSheets[1].cssRules[384].style['background-image'] = "none";
+    for(var i=0 ; i < document.styleSheets.length ; i++){
+        if(document.styleSheets[i].href && document.styleSheets[i].href.match(/^https?:\/\/labs\.geocaching\.com\/Content\/css\/main\?[v]\=\w*/)){
+            document.styleSheets[i].cssRules[384].style['background-image'] = "none";
+        }
+    }
 
     /*
      * Example Path for Site      /Adventures/Details/90ced6d4-0a22-4c19-a491-7ae17d489c60
